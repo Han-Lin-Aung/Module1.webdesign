@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Panel-X</a>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <i class="fa fa-bars"></i>
+      </nav>
+    </header>
+
+    <main>
+      <section id="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/slider1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/slider2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section id="about_us">
+        <div class="about_container">
+          <div class="left">
+            <img data-aos="fade-right" src="images/about_us.jpg" alt="" />
+          </div>
+          <div class="right">
+            <small data-aos="fade-left" data-aos-delay="200">About Us</small>
+            <h1 data-aos="fade-left" data-aos-delay="400">Lorem Ipsum</h1>
+            <p data-aos="fade-left" data-aos-delay="600">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos autem alias pariatur repellendus itaque aliquam
+              nemo, rem officia nostrum omnis fuga commodi deserunt consequuntur
+              libero rerum accusamus exercitationem accusantium!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="service_container">
+          <h1>Why shop with us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias,
+            voluptatem quo dicta placeat et reprehenderit voluptatibus. Amet
+            eius sequi delectus vel nemo dignissimos voluptatum aliquid,
+            eligendi quam esse, odio officia?
+          </p>
+
+          <div class="service_cards">
+            <div class="card">
+              <i class="fa-regular fa-truck"></i>
+              <h2>Fast Delivery</h2>
+              <p>Free shipping to all townships</p>
+            </div>
+
+            <div class="card">
+              <i class="fa-solid fa-shield"></i>
+              <h2>Secure Payment</h2>
+              <p>Your payment is secure with out enctyed system</p>
+            </div>
+
+            <div class="card">
+              <i class="fa-solid fa-headset"></i>
+              <h2>24/7 support</h2>
+              <p>Our dedicated tem is here to help you anytime</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 3000 },
+        speed: 2000,
+        effect: "cube",
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>

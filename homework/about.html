@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+NZ:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+    :root {
+      --orange-color: #ee5007;
+      --white-color: white;
+      --black-color: black;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    main {
+      background: url("https://themewagon.github.io/FestavaLive/images/edward-unsplash-blur.jpg");
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 12%;
+      background-color: black;
+    }
+    nav {
+      width: 90%;
+      height: 13vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    li {
+      list-style: none;
+    }
+    header nav a {
+      text-decoration: none;
+      color: var(--white-color);
+    }
+    header nav a i {
+      font-size: 35px;
+      transition: 0.3s;
+    }
+    header li a {
+      text-decoration: none;
+      color: var(--white-color);
+      padding: 10px;
+      transition: 0.3s;
+    }
+    header li a:hover,
+    header nav a i:hover,
+    header li a.active {
+      color: var(--orange-color);
+    }
+    .hero_section {
+      width: 100%;
+      height: 85vh;
+      display: flex;
+    }
+    .letter {
+      width: 55%;
+      height: 86vh;
+      padding: 34px 30px 0px 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--white-color);
+    }
+    .letter h3 {
+      font-size: 27px;
+      margin-bottom: 5px;
+    }
+    .letter p {
+      margin-bottom: 15px;
+      color: rgb(194, 194, 194);
+    }
+    .photo {
+      width: 45%;
+      height: 86vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      width: 85%;
+      height: 60vh;
+      background-image: url("https://img.magnific.com/free-photo/closeup-dj-working-blue-light_181624-18773.jpg?semt=ais_hybrid&w=740&q=80");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+    .inside_box {
+      margin-bottom: 20px;
+      width: 90%;
+      height: 25vh;
+      background: rgba(255, 255, 255, 0.696);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .inside_box .smile i {
+      font-size: 50px;
+      margin-right: 15px;
+    }
+    .smiles_letter p {
+      color: rgb(79, 78, 78);
+    }
+  </style>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href=""><i class="ri-disc-line"></i></a>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="artists_photo.html" class="nav-link">Artists</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero_section">
+        <div class="letter">
+          <h3>About The Musican Show 2024</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis quam magnam consequuntur aspernatur, voluptas molestias
+          </p>
+
+          <h3>Once in Lifetime Experience</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            eveniet voluptatibus.
+          </p>
+
+          <h3>Whole Night Party</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore.
+          </p>
+        </div>
+        <div class="photo">
+          <div class="box">
+            <div class="inside_box">
+              <div class="smile">
+                <i class="ri-emotion-happy-fill"></i>
+              </div>
+              <div class="smiles_letter">
+                <h2>a happy moment</h2>
+                <p>your amazing festival experience with us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

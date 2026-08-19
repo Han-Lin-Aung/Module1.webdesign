@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&family=Playwrite+NZ:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+    :root {
+      --orange-color: #ee5007;
+      --white-color: white;
+      --black-color: black;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    main {
+      background: url("https://themewagon.github.io/FestavaLive/images/nainoa-shizuru-unsplash-blur.jpg");
+      width: 100%;
+      height: 122vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 12%;
+      background-color: black;
+    }
+    nav {
+      width: 90%;
+      height: 13vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    li {
+      list-style: none;
+    }
+    header nav a {
+      text-decoration: none;
+      color: var(--white-color);
+    }
+    header nav a i {
+      font-size: 35px;
+      transition: 0.3s;
+    }
+    header li a {
+      text-decoration: none;
+      color: var(--white-color);
+      padding: 10px;
+      transition: 0.3s;
+    }
+    header li a:hover,
+    header nav a i:hover,
+    header li a.active {
+      color: var(--orange-color);
+    }
+    .celebrity h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .photo_box {
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+    }
+    .left_photo {
+      width: 40%;
+      height: 95vh;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 20px;
+    }
+    .alanwalker {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/45/Alan_Walker_-_2018_%28cropped%29.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60%;
+      height: 70vh;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+    .right_photo {
+      width: 40%;
+      height: 95vh;
+      display: flex;
+      /* align-items: center; */
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 20px;
+    }
+    .dj_soda {
+      background-image: url("https://i1.sndcdn.com/artworks-000120090597-z6qjzc-t500x500.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60%;
+      height: 28vh;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+    .dj_snake {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0oV7G40mHfv4Vbak4-2L-mK10llPIZaMTqhmSqGKg4cGoa4MwR7Uom_dn&s=10");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60%;
+      height: 28vh;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+    .dj_avicii {
+      background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iZtsBpjweYXc/v1/-1x-1.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 60%;
+      height: 28vh;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+    .left_photo div:hover,
+    .right_photo div:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href=""><i class="ri-disc-line"></i></a>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li>
+              <a href="artists_photo.html" class="nav-link active">Artists</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="celebrity">
+        <h1>Our Meet Celebrity</h1>
+      </div>
+      <div class="photo_box">
+        <div class="left_photo">
+          <div class="alanwalker"></div>
+        </div>
+        <div class="right_photo">
+          <div class="dj_soda"></div>
+          <div class="dj_snake"></div>
+          <div class="dj_avicii"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
